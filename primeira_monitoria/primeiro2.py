@@ -1,0 +1,1 @@
+variavel_para_importar = "Eu amo a EMAp! (Importado)"
