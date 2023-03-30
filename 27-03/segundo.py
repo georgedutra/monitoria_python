@@ -1,15 +1,6 @@
 # Segunda monitoria de Python, do dia 27 de março
 # Descomente as linhas de print() para ver o resultado no terminal.
 """
-if, elif, else
-
-for, while
-
-break, continue
-
-"""
-
-"""
 Estruturas Condicionais e Operadores Lógicos
 
 Temos em python as estruturas:
