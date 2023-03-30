@@ -1,4 +1,4 @@
-# Primeira monitoria de Python
+# Primeira monitoria de Python, do dia 24 de março
 # Descomente as linhas de print() para ver o resultado no terminal.
 
 """
