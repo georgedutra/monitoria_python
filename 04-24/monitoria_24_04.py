@@ -280,7 +280,7 @@ copia_lista = lista.copy() # O método copy() cria uma deep copy
 # ainda está ligada ao objeto original, e DEPENDE dele. Por isso o nome se traduz para "raso" ou "superficial".
 
 # SHALLOW COPY
-# copia_lista = lista # Se apenas atribuímos um mesmo objeto em outra variável, ambas nos levarão no MESMO local de memória
+copia_lista = lista # Se apenas atribuímos um mesmo objeto em outra variável, ambas nos levarão no MESMO local de memória
 # print(id(lista), id(copia_lista))
 
 # lista.append(11)
