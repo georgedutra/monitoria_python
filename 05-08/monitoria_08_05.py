@@ -72,7 +72,7 @@ Isso decorre do fato de que tuplas são definidas com o objetivo de transportar 
 portanto uma vez criadas, não podemos alterar seu conteúdo ou seu tamanho.
 
 Por consequência do menor número de métodos, uma tupla é mais prática que uma lista, mas menos útil.
-Além disso, ela tem a utilidade proteger seu conteúdo da influência do usuário. 
+Além disso, ela tem a utilidade de proteger seu conteúdo da influência do usuário. 
 """
 
 ###############################################################################################################
@@ -104,8 +104,8 @@ dicionario = {1 : "EMAp", "dois" : "CdD", False : "MAp", (4,6,8) : [1,2,3,4,5]}
 
 # Recursão: Podemos colocar um dicionário dentro do outro
 dicionario_2 = {1: "FGV", 2: {"um": "EMAp", "dois": "CPDOC"}}
-# print(dicionario_3[1])
-# print(dicionario_3[2]["um"])
+# print(dicionario_2[1])
+# print(dicionario_2[2]["um"])
 
 # Para adicionar um elemento, "acessamos" uma chave que não existe ainda, e atribuímos algum valor
 aluno = {} 
@@ -142,15 +142,9 @@ valor = aluno.get("Nacionalidade")
 # print(valor)
 # print(cartao.get("Essa chave não existe", -1)) # Podemos escolher o valor retornado caso a chave não exista
 
-
 # dict.pop() remove itens específicos pela chave
 # removido = aluno.pop("Religião") # Remove o valor da chave passada, e o retorna
-
 # del aluno["Religião"] # Funciona mas não é o usual
-
-# dict.clear() esvazia completamente o dicionário
-aluno.clear()
-# print(aluno)
 
 # dict.items() retorna uma lista com tuplas, cada tupla contendo um item (ou seja, um par (chave, valor))
 itens = aluno.items()
@@ -168,7 +162,9 @@ keys = list(aluno.keys())
 values = aluno.values()
 # print(values)
 
-
+# dict.clear() esvazia completamente o dicionário
+aluno.clear()
+# print(aluno)
 
 ###############################################################################################################
 
@@ -179,7 +175,7 @@ Imagine-os como dicionários sem chave:
 - Não possuem ordem nem índices;
 - Não são homogêneos;
 - Não permitem repetição;
-- Não suportam nenhum acesso ou loop.
+- Não suportam nenhum acesso ou loop diretamente. Se tentarmos, o python faz um loop sobre uma lista criada por cima do conjunto.
 
 Em suma, não temos como acessar um set de nenhuma forma. Seu único objetivo é transportar dados.
 Ainda assim, existem algumas utilidades para ele, como remover duplicatas.
